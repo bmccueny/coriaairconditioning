@@ -82,16 +82,14 @@ export function Header() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 lg:h-20 items-center justify-between">
             {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative flex h-10 w-10 lg:h-12 lg:w-12 items-center justify-center rounded-xl bg-gradient-to-br from-[#830f14] to-[#5a0b0d] shadow-lg shadow-[#830f14]/20 group-hover:shadow-[#830f14]/40 transition-shadow">
-                <span className="text-lg lg:text-xl font-bold text-white font-[family-name:var(--font-poppins)]">C</span>
-              </div>
-              <div className="hidden sm:block">
-                <span className="text-base lg:text-lg font-semibold text-white whitespace-nowrap font-[family-name:var(--font-poppins)]">
-                  Coria
-                </span>
-                <span className="hidden lg:block text-xs text-gray-400 -mt-0.5">Heating & Air Conditioning</span>
-              </div>
+            <Link href="/" className="flex items-center group">
+              <span className="text-2xl lg:text-3xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
+                Coria
+              </span>
+              <span className="hidden sm:block ml-2.5 pl-2.5 border-l border-white/20 leading-tight">
+                <span className="block text-[11px] lg:text-xs font-medium text-gray-300 tracking-wide uppercase">Heating &</span>
+                <span className="block text-[11px] lg:text-xs font-medium text-gray-300 tracking-wide uppercase -mt-0.5">Air Conditioning</span>
+              </span>
             </Link>
 
             {/* Desktop Navigation */}

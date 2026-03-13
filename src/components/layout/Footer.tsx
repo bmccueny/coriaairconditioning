@@ -12,12 +12,13 @@ export function Footer() {
         <div className="py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-[#830f14]">
-                <span className="text-xl font-bold text-white">C</span>
-              </div>
-              <span className="text-lg font-semibold text-white">
-                {COMPANY.shortName}
+            <div className="flex items-center">
+              <span className="text-2xl font-bold text-white font-[family-name:var(--font-poppins)] tracking-tight">
+                Coria
+              </span>
+              <span className="ml-2.5 pl-2.5 border-l border-white/20 leading-tight">
+                <span className="block text-[11px] font-medium text-gray-400 tracking-wide uppercase">Heating &</span>
+                <span className="block text-[11px] font-medium text-gray-400 tracking-wide uppercase -mt-0.5">Air Conditioning</span>
               </span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">

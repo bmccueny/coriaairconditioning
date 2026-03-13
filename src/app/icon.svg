@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#830f14"/>
+      <stop offset="100%" style="stop-color:#5a0b0d"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="50%" style="stop-color:#f7c948"/>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#a8d8ea"/>
+      <stop offset="100%" style="stop-color:#ffffff"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect width="512" height="512" rx="96" ry="96" fill="url(#bg)"/>
+  <!-- Flame (left side - heating) -->
+  <path d="M200 340 C200 280 160 260 180 200 C190 240 220 250 210 290 C220 260 240 240 230 200 C250 250 270 300 250 340 C250 370 230 390 200 390 C170 390 150 370 160 340 Z" fill="url(#flame)" opacity="0.95"/>
+  <!-- Snowflake (right side - cooling) -->
+  <g transform="translate(340, 260)" fill="url(#snow)" opacity="0.95">
+    <!-- Center -->
+    <circle cx="0" cy="0" r="8"/>
+    <!-- Vertical arm -->
+    <rect x="-3" y="-55" width="6" height="110" rx="3"/>
+    <!-- Top branches -->
+    <line x1="-15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round"/>
+    <!-- Bottom branches -->
+    <line x1="-15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round"/>
+    <line x1="15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round"/>
+    <!-- Diagonal arm 1 -->
+    <rect x="-3" y="-55" width="6" height="110" rx="3" transform="rotate(60)"/>
+    <!-- Branches -->
+    <line x1="-15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(60)"/>
+    <line x1="15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(60)"/>
+    <line x1="-15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(60)"/>
+    <line x1="15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(60)"/>
+    <!-- Diagonal arm 2 -->
+    <rect x="-3" y="-55" width="6" height="110" rx="3" transform="rotate(-60)"/>
+    <!-- Branches -->
+    <line x1="-15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(-60)"/>
+    <line x1="15" y1="-35" x2="0" y2="-45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(-60)"/>
+    <line x1="-15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(-60)"/>
+    <line x1="15" y1="35" x2="0" y2="45" stroke="url(#snow)" stroke-width="5" stroke-linecap="round" transform="rotate(-60)"/>
+  </g>
+</svg>
